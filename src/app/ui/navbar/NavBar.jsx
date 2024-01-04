@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { BsList } from "react-icons/bs";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function Navbar() {
 
@@ -50,17 +51,31 @@ export default function Navbar() {
             height={40}
           />
         </Link>
-        <BsList onClick={toggleMenu} />
+        <div>
+          <BsList onClick={toggleMenu} />
+          <nav className={styles.navDesktop}>
+            <ul>
+              <li><Link href="#musicProd">Producción musical</Link></li>
+              <li><Link href="#session">Músicos de sesión</Link></li>
+              <li><Link href="#recordingStudio">Estudio de grabación</Link></li>
+              <li><Link href="#contact">
+                <div>
+                  <FaWhatsapp />
+                  <p>contacto</p>
+                </div>
+              </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav className={isMenuOpen ? styles.openMenu : styles.closedMenu}>
+
+      <nav className={`${isMenuOpen ? styles.openMenu : styles.closedMenu} ${styles.navbarMobile}`}>
         <ul>
           <li><Link href="#musicProd" onClick={toggleMenu}>Producción musical</Link></li>
           <li><Link href="#session" onClick={toggleMenu}>Músicos de sesión</Link></li>
           <li><Link href="#recordingStudio" onClick={toggleMenu}>Estudio de grabación</Link></li>
-          <li><Link
-            href="#contact"
-            onClick={toggleMenu}
-          >Contacto</Link></li>
+          <li><Link href="#contact" onClick={toggleMenu}>Contacto</Link></li>
         </ul>
 
         <div className={styles.rrss}>
@@ -71,8 +86,8 @@ export default function Navbar() {
             <FaYoutube className={styles.rrssIcon} />
           </Link>
         </div>
-
       </nav>
+
     </header >
   );
 }

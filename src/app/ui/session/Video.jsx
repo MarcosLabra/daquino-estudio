@@ -1,6 +1,4 @@
-
 import style from "./video.module.scss"
-
 
 export default function Video() {
     return (
