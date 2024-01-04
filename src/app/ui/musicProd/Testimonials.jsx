@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import TestimonialCard from "../cards/TestimoanialCard";
+import { useEffect, useState } from "react";
 
 const team = [
   {
@@ -26,52 +27,49 @@ const team = [
 ]
 
 
-
 export default function Testimonials() {
+  const [slidesToShow, setSlidesToShow] = useState(1);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     centerMode: true,
-  }
-
-
-  const mediaQuery768 = window.matchMedia('(min-width: 768px)');
-  const mediaQuery1200 = window.matchMedia('(min-width: 1200px)');
+  };
 
   const updateSettings = () => {
-    if (mediaQuery768.matches) {
-      settings.slidesToShow = 2;
-    } else if (mediaQuery1200.matches) {
-      settings.slidesToShow = 3;
+    if (window.innerWidth >= 1200) {
+      setSlidesToShow(3);
+    } else if (window.innerWidth >= 768) {
+      setSlidesToShow(2);
     } else {
-      settings.slidesToShow = 1;
+      setSlidesToShow(1);
     }
   };
 
-  updateSettings();
+  useEffect(() => {
+    updateSettings();
+    window.addEventListener("resize", updateSettings);
 
-  window.addEventListener('resize', updateSettings);
-
+    return () => {
+      window.removeEventListener("resize", updateSettings);
+    };
+  }, []); // Empty dependency array ensures useEffect runs only on mount, i.e., on the client side
 
   return (
-    <section className={style.testimonials} >
-
+    <section className={style.testimonials}>
       <Slider {...settings}>
-        {
-          team.map((member, index) => (
-            <TestimonialCard
-              key={index}
-              photo={member.photo}
-              artist={member.artist}
-              testimonial={member.testimonial}
-            />
-          ))
-        }
-      </Slider >
-
-    </section >
-  )
+        {team.map((member, index) => (
+          <TestimonialCard
+            key={index}
+            photo={member.photo}
+            artist={member.artist}
+            testimonial={member.testimonial}
+          />
+        ))}
+      </Slider>
+    </section>
+  );
 }
