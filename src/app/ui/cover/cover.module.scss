@@ -26,10 +26,13 @@
       font-size: 18px;
     }
   }
-  .heroImage {
+  .heroImageMobile {
     position: absolute;
     bottom: 4vh;
     opacity: 10%;
+  }
+  .heroImageTablet {
+    display: none;
   }
 }
 
@@ -40,4 +43,19 @@
 .red {
   color: $red;
   font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+  .cover {
+    padding-top: 40px;
+    .heroImageMobile {
+      display: none;
+    }
+    .heroImageTablet {
+      display: block;
+      position: absolute;
+      bottom: 4vh;
+      opacity: 10%;
+    }
+  }
 }

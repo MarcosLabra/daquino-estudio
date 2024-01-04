@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const team = [{
   teamPhoto: "/teamCards/marcos.png",
   teamMember: "Marcos Daquino",
@@ -27,6 +26,7 @@ const team = [{
 
 
 export default function TeamCarrousel() {
+
   const settings = {
     dots: true,
     infinite: true,
@@ -36,6 +36,23 @@ export default function TeamCarrousel() {
     centerMode: true,
     arrows: true,
   }
+
+  const mediaQuery768 = window.matchMedia('(min-width: 768px)');
+  const mediaQuery1200 = window.matchMedia('(min-width: 1200px)');
+
+  const updateSettings = () => {
+    if (mediaQuery768.matches) {
+      settings.slidesToShow = 2;
+    } else if (mediaQuery1200.matches) {
+      settings.slidesToShow = 3;
+    } else {
+      settings.slidesToShow = 1;
+    }
+  };
+
+  updateSettings();
+
+   window.addEventListener('resize', updateSettings);
 
   return (
     <section className={style.teamCarrousel} >

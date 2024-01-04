@@ -34,9 +34,16 @@
         align-self: self-end;
       }
     }
-    iframe{
+    iframe {
       margin-top: 30px;
       border-radius: 4px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .musicProd {
+    article {
+      padding: 40px 60px ;
     }
   }
 }

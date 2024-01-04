@@ -37,6 +37,25 @@ export default function Testimonials() {
     centerMode: true,
   }
 
+
+  const mediaQuery768 = window.matchMedia('(min-width: 768px)');
+  const mediaQuery1200 = window.matchMedia('(min-width: 1200px)');
+
+  const updateSettings = () => {
+    if (mediaQuery768.matches) {
+      settings.slidesToShow = 2;
+    } else if (mediaQuery1200.matches) {
+      settings.slidesToShow = 3;
+    } else {
+      settings.slidesToShow = 1;
+    }
+  };
+
+  updateSettings();
+
+  window.addEventListener('resize', updateSettings);
+
+
   return (
     <section className={style.testimonials} >
 

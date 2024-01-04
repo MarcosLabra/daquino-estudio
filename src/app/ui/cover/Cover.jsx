@@ -1,7 +1,5 @@
 import Image from "next/image";
 import style from "./cover.module.scss"
-import { FaWhatsapp } from "react-icons/fa";
-
 
 export default function Cover() {
   return (
@@ -16,11 +14,18 @@ export default function Cover() {
         </p>
       </div>
       <Image
-        className={style.heroImage}
+        className={style.heroImageMobile}
         src="/images/hero-image-desktop.svg"
         alt="ilustracion de un microfono, una consola y dos parlantes"
         width={328}
         height={288}
+      />
+      <Image
+        className={style.heroImageTablet}
+        src="/images/hero-image-desktop.svg"
+        alt="ilustracion de un microfono, una consola y dos parlantes"
+        width={656}
+        height={576}
       />
    
     </section>
