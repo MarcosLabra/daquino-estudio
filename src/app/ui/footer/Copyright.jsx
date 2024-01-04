@@ -1,5 +1,5 @@
 import style from "./copyright.module.scss"
-import { FaWhatsapp } from "react-icons/Fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Copyright() {
     return (
