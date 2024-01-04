@@ -6,6 +6,7 @@ import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import WaIcon from "../WaIcon";
 
 
 export default function Navbar() {
@@ -52,18 +53,19 @@ export default function Navbar() {
           />
         </Link>
         <div>
-          <BsList onClick={toggleMenu} />
+          <BsList onClick={toggleMenu} className={styles.fsBar} />
           <nav className={styles.navDesktop}>
             <ul>
               <li><Link href="#musicProd">Producción musical</Link></li>
               <li><Link href="#session">Músicos de sesión</Link></li>
               <li><Link href="#recordingStudio">Estudio de grabación</Link></li>
-              <li><Link href="#contact">
-                <div>
-                  <FaWhatsapp />
-                  <p>contacto</p>
-                </div>
-              </Link>
+              <li>
+                <Link href="#contact">
+                  <button>
+                    <FaWhatsapp className={styles.waIcon}/>
+                    Contacto
+                  </button>
+                </Link>
               </li>
             </ul>
           </nav>

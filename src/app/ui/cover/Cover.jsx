@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./cover.module.scss"
+import { FaWhatsapp } from "react-icons/fa";
 
 
 export default function Cover() {
@@ -21,6 +22,7 @@ export default function Cover() {
         width={328}
         height={288}
       />
+   
     </section>
   )
 }

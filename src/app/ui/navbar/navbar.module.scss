@@ -74,7 +74,7 @@
     position: relative;
     div {
       padding: 0 16px;
-      svg {
+      .fsBar {
         display: none;
       }
       .navDesktop {
@@ -85,17 +85,35 @@
           font-size: 14px;
           li {
             list-style: none;
-            margin-left: 10px;
+            margin-left: 20px;
             font-weight: 700;
             color: $oak;
-            div {
+            a {
+              &:hover {
+                color: $teal-highlight;
+              }
+              &:active {
+                color: $teal;
+              }
+            }
+            button {
+              display: flex;
+              align-items: center;
+              border: none;
               background-color: $teal;
               color: $white;
-              height: 100%;
-              padding: 10px 20px;
+              padding: 5px 16px;
               border-radius: 25px;
+              .waIcon {
+                width: 16px;
+                margin-right: 5px;
+                color: $white;
+              }
               &:hover {
                 background-color: $teal-highlight;
+              }
+              &:active {
+                background-color: $teal;
               }
             }
           }
@@ -103,88 +121,7 @@
       }
     }
     .navbarMobile {
-      transition: all 0.3s ease;
-      position: absolute;
-      background-color: $oak;
-      height: 90vh;
-      li {
-        text-align: center;
-        width: 100%;
-        color: $ambar;
-        padding: 15px;
-        font-size: 16px;
-        font-weight: 900;
-        list-style: none;
-        cursor: pointer;
-        &:hover {
-          background-color: $ambar;
-          color: $oak;
-        }
-        a {
-          display: block;
-          width: 100%;
-        }
-      }
-      .rrss {
-        display: flex;
-        padding-top: 50vh;
-        justify-content: space-evenly;
-        bottom: 10vh;
-        background-color: $oak;
-        .rrssIcon {
-          color: $ambar;
-          &:hover {
-            color: $white;
-          }
-        }
-      }
-    }
-    .closedMenu {
-      right: -200px;
-    }
-    .openMenu {
-      right: 0px;
+      display: none;
     }
   }
 }
-
-// @media screen and (min-width: 768px) {
-//   .navbarContainer {
-//     nav {
-//       ul {
-//         display: flex;
-//         align-items: center;
-//         li {
-//           list-style: none;
-//           margin-left: 40px;
-//           font-weight: 700;
-//           color: $oak;
-//           transition: all 150ms ease-in-out;
-//           &:hover {
-//             color: $white;
-//             cursor: pointer;
-//           }
-//           div {
-//             background-color: $teal;
-//             color: $white;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             width: 167px;
-//             height: 32px;
-//             border-radius: 50px;
-//             transition: all 150ms ease-in-out;
-//             &:hover {
-//               background-color: $teal-highlight;
-//               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-//             }
-//             svg {
-//               width: 18px;
-//               margin-right: 12px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
