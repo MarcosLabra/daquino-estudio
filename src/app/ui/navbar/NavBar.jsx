@@ -6,8 +6,6 @@ import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import WaIcon from "../WaIcon";
-
 
 export default function Navbar() {
 

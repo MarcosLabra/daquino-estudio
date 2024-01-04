@@ -28,11 +28,11 @@ export default function Info() {
         </div>
       </div>
       <div className={style.rrss}>
-        <Link href="https://www.instagram.com/daquinoestudio/" rel="noopener noreferrer" target="_blank">
+        <Link className={style.rrssInstagram} href="https://www.instagram.com/daquinoestudio/" rel="noopener noreferrer" target="_blank">
           <FaInstagram className={style.rrssIcon} />
           <p>Instagram</p>
         </Link>
-        <Link href="https://www.youtube.com/@daquinoestudio4227" rel="noopener noreferrer" target="_blank">
+        <Link className={style.rrssYoutube} href="https://www.youtube.com/@daquinoestudio4227" rel="noopener noreferrer" target="_blank">
           <FaYoutube className={style.rrssIcon} />
           <p>Youtube</p>
         </Link>

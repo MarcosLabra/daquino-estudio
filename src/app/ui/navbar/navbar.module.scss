@@ -68,12 +68,7 @@
 
 @media screen and (min-width: 768px) {
   .navbarContainer {
-    position: fixed !important;
-    z-index: 5;
-    width: 100vw;
-    position: relative;
     div {
-      padding: 0 16px;
       .fsBar {
         display: none;
       }
@@ -106,7 +101,7 @@
               border-radius: 25px;
               .waIcon {
                 width: 16px;
-                margin-right: 5px;
+                margin-right: 10px;
                 color: $white;
               }
               &:hover {

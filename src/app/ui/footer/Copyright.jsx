@@ -1,14 +1,14 @@
 import style from "./copyright.module.scss"
-import { MdLanguage } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/Fa";
 
 export default function Copyright() {
     return (
         <div className={style.copyright}>
-            <a href="https://mlabra-dev.netlify.app/" rel="noopener noreferrer" target="_blank">
+            <a href="https://walink.co/8a5dfa" rel="noopener noreferrer" target="_blank">
 
-                <MdLanguage />
+                <p className={style.dev}>Desarrollo </p>
                 <div>
-                    <p className={style.dev}>Desarrollo </p>
+                    <FaWhatsapp />
                     <p className={style.name}>Marcos Labra</p>
                 </div>
             </a>
