@@ -3,3 +3,11 @@
   right: 15px;
   bottom: 15px;
 }
+
+@media screen and (min-width: 768px) {
+  .waIconContainer {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+  }
+}

@@ -37,8 +37,14 @@
     width: 100%;
     height: 30px;
     border-radius: 4px;
-    &:hover{
+    &:hover {
       background-color: $teal-highlight;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 40px 60px;
   }
 }
