@@ -27,6 +27,13 @@ export default function Cover() {
         width={656}
         height={576}
       />
+      <Image
+        className={style.heroImageDesktop}
+        src="/images/hero-image-desktop.svg"
+        alt="ilustracion de un microfono, una consola y dos parlantes"
+        width={656}
+        height={576}
+      />
    
     </section>
   )

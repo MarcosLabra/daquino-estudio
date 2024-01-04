@@ -34,6 +34,7 @@
       font-size: 16px;
       font-weight: 900;
       list-style: none;
+      border-bottom: 1px solid $ambar;
       cursor: pointer;
       &:hover {
         background-color: $ambar;
@@ -94,18 +95,22 @@
             button {
               display: flex;
               align-items: center;
+              justify-content: center;
               border: none;
               background-color: $teal;
               color: $white;
-              padding: 5px 16px;
+              height: 32px;
+              width: 120px;
               border-radius: 25px;
               .waIcon {
                 width: 16px;
-                margin-right: 10px;
+                margin-right: 12px;
                 color: $white;
               }
               &:hover {
                 background-color: $teal-highlight;
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+                  0px 4px 8px 3px rgba(0, 0, 0, 0.15);
               }
               &:active {
                 background-color: $teal;
@@ -117,6 +122,37 @@
     }
     .navbarMobile {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbarContainer {
+    padding: 0 60px;
+    background-color: $ambar;
+    div {
+      .navDesktop {
+        ul {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          li {
+            margin-left: 40px;
+
+            a {
+              &:hover {
+                color: $teal-highlight;
+              }
+              &:active {
+                color: $teal;
+              }
+            }
+            button {
+              width: 167px;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -25,6 +25,24 @@ const team = [
     teamRole: "Tecladista de sesión, Producción Musical, Arreglador.",
     teamColor: "#F6343C",
   },
+  {
+    teamPhoto: "/teamCards/marcos.png",
+    teamMember: "Marcos Daquino",
+    teamRole: "Baterista de sesión, Producción Musical, Grabación - Mezcla - Mastering.",
+    teamColor: "#f1b67c",
+  },
+  {
+    teamPhoto: "/teamCards/jose.png",
+    teamMember: "Jose Daquino",
+    teamRole: "Coaching vocal, Letras.",
+    teamColor: "#048E91",
+  },
+  {
+    teamPhoto: "/teamCards/brian.png",
+    teamMember: "Brian Rosas",
+    teamRole: "Tecladista de sesión, Producción Musical, Arreglador.",
+    teamColor: "#F6343C",
+  },
 ];
 
 export default function TeamCarrousel() {
@@ -42,7 +60,7 @@ export default function TeamCarrousel() {
 
   const updateSettings = () => {
     if (window.innerWidth >= 1200) {
-      setSlidesToShow(3);
+      setSlidesToShow(4);
     } else if (window.innerWidth >= 768) {
       setSlidesToShow(2);
     } else {
