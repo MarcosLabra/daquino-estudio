@@ -1,0 +1,40 @@
+@import "../../variables.module.scss";
+
+.copyright {
+  background-color: $black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    div {
+      .dev {
+        font-size: 10px;
+        color: #635959;
+      }
+
+      .name {
+        margin-left: 10px;
+
+        &:hover {
+          color: $teal-highlight;
+        }
+      }
+
+    }
+
+    .copy {
+      width: 260px;
+    }
+  }
+}

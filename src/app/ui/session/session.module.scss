@@ -1,0 +1,46 @@
+@import "../../variables.module.scss";
+
+.session {
+  background-color: $ambar;
+  width: 100vw;
+
+  article {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      font-weight: 500;
+      font-size: 14;
+      margin-bottom: 24px;
+    }
+
+    .phrase {
+      height: 74px;
+      display: flex;
+      justify-content: center;
+
+      .quotesUp {
+        align-self: self-start;
+      }
+
+      h4 {
+        width: 160px;
+        margin: 0 10px;
+        font-family: "Sora", sans-serif;
+        font-size: 26px;
+
+        span {
+          color: $white;
+        }
+      }
+
+      .quotesDown {
+        align-self: self-end;
+      }
+    }
+
+  }
+}

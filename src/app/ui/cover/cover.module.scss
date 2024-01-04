@@ -1,0 +1,43 @@
+@import "../../variables.module.scss";
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: $ambar;
+  height: 90vh;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: 36px;
+      width: 259px;
+      margin-bottom: 22px;
+      font-family: "Sora", sans-serif;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      border-top: 1px solid $oak;
+      padding-top: 22px;
+      width: 230px;
+      font-size: 18px;
+    }
+  }
+  .heroImage {
+    position: absolute;
+    bottom: 4vh;
+    opacity: 10%;
+  }
+}
+
+.white {
+  color: $white;
+  font-weight: 900;
+}
+.red {
+  color: $red;
+  font-weight: 900;
+}

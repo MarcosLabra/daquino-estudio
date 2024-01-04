@@ -1,0 +1,28 @@
+@import "../../variables.module.scss";
+
+.teamCard {
+  width: 213px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+  padding-top: 20px;
+  margin:70px 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+    0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+  color: $white;
+  text-align: center;
+  h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    height: 75px;
+    width: 132px;
+  }
+}
