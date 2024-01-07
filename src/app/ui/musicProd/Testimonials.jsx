@@ -23,6 +23,11 @@ const team = [
     testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
     artist: "Artista 3",
   },
+  {
+    photo: "/testimonialCards/artist-1.png",
+    testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
+    artist: "Artista 4",
+  },
 
 ]
 
@@ -41,7 +46,7 @@ export default function Testimonials() {
 
   const updateSettings = () => {
     if (window.innerWidth >= 1200) {
-      setSlidesToShow(4);
+      setSlidesToShow(3);
     } else if (window.innerWidth >= 768) {
       setSlidesToShow(2);
     } else {

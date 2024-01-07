@@ -10,8 +10,6 @@
 
 @media screen and (min-width: 768px) {
   .waIconContainer {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+    display: none;
   }
 }

@@ -10,38 +10,32 @@ const team = [
   {
     teamPhoto: "/teamCards/marcos.png",
     teamMember: "Marcos Daquino",
-    teamRole: "Baterista de sesión, Producción Musical, Grabación - Mezcla - Mastering.",
+    teamRole: "Baterista de sesión, Producción Musical, Grabación - Mezcla - Mastering",
     teamColor: "#f1b67c",
   },
   {
     teamPhoto: "/teamCards/jose.png",
     teamMember: "Jose Daquino",
-    teamRole: "Coaching vocal, Letras.",
+    teamRole: "Coaching vocal, Letras",
     teamColor: "#048E91",
   },
   {
     teamPhoto: "/teamCards/brian.png",
     teamMember: "Brian Rosas",
-    teamRole: "Tecladista de sesión, Producción Musical, Arreglador.",
+    teamRole: "Tecladista de sesión, Producción Musical, Arreglador",
     teamColor: "#F6343C",
   },
   {
-    teamPhoto: "/teamCards/marcos.png",
-    teamMember: "Marcos Daquino",
-    teamRole: "Baterista de sesión, Producción Musical, Grabación - Mezcla - Mastering.",
-    teamColor: "#f1b67c",
+    teamPhoto: "/teamCards/claudio.png",
+    teamMember: "Claudio Martinez",
+    teamRole: "Guitarrista de sesión",
+    teamColor: "#D4AF37",
   },
   {
-    teamPhoto: "/teamCards/jose.png",
-    teamMember: "Jose Daquino",
-    teamRole: "Coaching vocal, Letras.",
-    teamColor: "#048E91",
-  },
-  {
-    teamPhoto: "/teamCards/brian.png",
-    teamMember: "Brian Rosas",
-    teamRole: "Tecladista de sesión, Producción Musical, Arreglador.",
-    teamColor: "#F6343C",
+    teamPhoto: "/teamCards/mati.png",
+    teamMember: "Matias Zarza",
+    teamRole: " Produccion de musica urbana, Grabacion - Mezcla - Mastering",
+    teamColor: "#812A89",
   },
 ];
 
@@ -60,7 +54,7 @@ export default function TeamCarrousel() {
 
   const updateSettings = () => {
     if (window.innerWidth >= 1200) {
-      setSlidesToShow(4);
+      setSlidesToShow(3);
     } else if (window.innerWidth >= 768) {
       setSlidesToShow(2);
     } else {
