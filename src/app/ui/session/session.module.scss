@@ -13,7 +13,7 @@
 
     p {
       font-weight: 500;
-      font-size: 14;
+      font-size: 14px;
       margin-bottom: 24px;
     }
 
@@ -22,33 +22,84 @@
       display: flex;
       justify-content: center;
 
-      .quotesUp {
+      .quotesUpMobile {
         align-self: self-start;
       }
-
+      .quotesUpDesktop {
+        display: none;
+        align-self: self-start;
+      }
       h4 {
         width: 160px;
         margin: 0 10px;
         font-family: "Sora", sans-serif;
         font-size: 26px;
-
         span {
           color: $white;
         }
       }
-
-      .quotesDown {
+      .quotesDownMobile {
+        align-self: self-end;
+      }
+      .quotesDownDesktop {
+        display: none;
         align-self: self-end;
       }
     }
-
   }
 }
 
 @media screen and (min-width: 768px) {
   .session {
     article {
-      padding: 40px 60px ;
+      padding: 40px 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .session {
+    article {
+      padding: 60px 120px;
+      text-align: left;
+      p {
+        font-size: 18px;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        p {
+          width: 500px;
+        }
+        .phrase {
+          margin-top: 0px;
+          padding-right: 20px;
+          width: fit-content;
+          height: 140px;
+          display: flex;
+          .quotesUpMobile {
+            display: none;
+          }
+          .quotesUpDesktop {
+            display: block;
+          }
+          h4 {
+            width: 300px;
+            text-align: center;
+            margin: 0 20px;
+            font-size: 50px;
+          }
+          .quotesDownMobile {
+            display: none;
+          }
+          .quotesDownDesktop {
+            display: block;
+          }
+        }
+      }
     }
   }
 }

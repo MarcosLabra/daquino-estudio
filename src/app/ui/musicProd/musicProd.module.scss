@@ -18,7 +18,11 @@
       height: 74px;
       display: flex;
       justify-content: center;
-      .quotesUp {
+      .quotesUpMobile {
+        align-self: self-start;
+      }
+      .quotesUpDesktop {
+        display: none;
         align-self: self-start;
       }
       h4 {
@@ -30,7 +34,11 @@
           color: $white;
         }
       }
-      .quotesDown {
+      .quotesDownMobile {
+        align-self: self-end;
+      }
+      .quotesDownDesktop {
+        display: none;
         align-self: self-end;
       }
     }
@@ -40,10 +48,53 @@
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .musicProd {
     article {
-      padding: 40px 60px ;
+      padding: 40px 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .musicProd {
+    article {
+      padding: 60px 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      p {
+        font-size: 18px;
+        width: 450px;
+      }
+      .phrase {
+        margin-top:40px;
+        height: 140px;
+        .quotesUpMobile {
+          display: none;
+        }
+        .quotesUpDesktop {
+          display: block;
+        }
+        h4 {
+          width: 300px;
+          margin: 0 20px;
+          font-size: 50px;
+        }
+        .quotesDownMobile {
+          display: none;
+        }
+        .quotesDownDesktop {
+          display: block;
+        }
+      }
+      iframe {
+        margin-top: 0;
+        width: 500px;
+        height: 550px;
+      }
     }
   }
 }
