@@ -60,6 +60,36 @@
       }
       .rrss {
         margin: 0 50px;
+        p{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .infoContainer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .infoDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+      .info {
+        margin: 30px 0 0 0;
+        p{
+          font-size: 16px;
+        }
+      }
+      .rrss {
+        margin: 30px 0 0 0;
+        font-size: 20px;
+        p{
+          font-size: 18px;
+        }
       }
     }
   }

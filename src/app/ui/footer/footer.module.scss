@@ -2,3 +2,15 @@
     background-color: #1E1E1E;
 }
 
+@media screen and (min-width: 1200px) {
+    .footer{
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 240px;
+        }
+    }
+    
+}
