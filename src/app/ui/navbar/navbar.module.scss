@@ -86,10 +86,10 @@
             color: $oak;
             a {
               &:hover {
-                color: $teal-highlight;
+                color: $teal;
               }
               &:active {
-                color: $teal;
+                color: $teal-highlight;
               }
             }
             button {
@@ -139,14 +139,6 @@
           li {
             margin-left: 40px;
 
-            a {
-              &:hover {
-                color: $teal-highlight;
-              }
-              &:active {
-                color: $teal;
-              }
-            }
             button {
               width: 167px;
             }
