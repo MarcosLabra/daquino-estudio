@@ -62,44 +62,49 @@
     article {
       padding: 60px 120px;
       text-align: left;
-      p {
-        font-size: 16px;
-      }
       div {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         margin-top: 20px;
         width: 100%;
         p {
+          font-size: 16px;
           width: 500px;
         }
-        .phrase {
-          margin-top: 0px;
-          padding-right: 50px;
-          width: fit-content;
-          height: 140px;
-          display: flex;
-          .quotesUpMobile {
-            display: none;
-          }
-          .quotesUpDesktop {
-            display: block;
-          }
-          h4 {
-            width: 300px;
-            text-align: center;
-            margin: 0 20px;
-            font-size: 50px;
-          }
-          .quotesDownMobile {
-            display: none;
-          }
-          .quotesDownDesktop {
-            display: block;
-          }
-        }
+        // .phrase {
+        //   margin-top: 0px;
+        //   padding-right: 50px;
+        //   width: fit-content;
+        //   height: 140px;
+        //   display: flex;
+        //   .quotesUpMobile {
+        //     display: none;
+        //   }
+        //   .quotesUpDesktop {
+        //     display: block;
+        //   }
+        //   h4 {
+        //     width: 300px;
+        //     text-align: center;
+        //     margin: 0 20px;
+        //     font-size: 50px;
+        //   }
+        //   .quotesDownMobile {
+        //     display: none;
+        //   }
+        //   .quotesDownDesktop {
+        //     display: block;
+        //   }
+        // }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .session {
+    article {
+      padding: 60px 300px;
     }
   }
 }

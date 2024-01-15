@@ -22,8 +22,13 @@
 @media screen and (min-width: 1200px) {
   .title {
     padding: 0 60px;
-    h3{
+    h3 {
       font-size: 28px;
     }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .title {
+    padding: 0 120px;
   }
 }

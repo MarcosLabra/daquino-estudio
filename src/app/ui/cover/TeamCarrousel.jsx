@@ -48,12 +48,14 @@ export default function TeamCarrousel() {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    centerMode: true,
     arrows: true,
   };
 
   const updateSettings = () => {
-    if (window.innerWidth >= 1200) {
+
+    if (window.innerWidth >= 1600) {
+      setSlidesToShow(4);
+    } else if (window.innerWidth >= 1200) {
       setSlidesToShow(3);
     } else if (window.innerWidth >= 768) {
       setSlidesToShow(2);

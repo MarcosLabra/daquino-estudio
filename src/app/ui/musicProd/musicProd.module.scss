@@ -71,7 +71,7 @@
         width: 450px;
       }
       .phrase {
-        margin-top:40px;
+        margin-top: 40px;
         height: 140px;
         .quotesUpMobile {
           display: none;
@@ -93,9 +93,21 @@
       }
       iframe {
         margin-top: 0;
-        margin-left: 50px;
+        margin-left: 10vw;
         width: 500px;
         height: 550px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .musicProd {
+    article {
+      p {
+        font-size: 16px;
+        width: 450px;
+        margin-bottom: 48px;
       }
     }
   }

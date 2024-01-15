@@ -84,7 +84,7 @@
         text-align: left;
       }
       p {
-        text-align: left;
+        text-align: justify;
         width: 376px;
         font-size: 18px;
       }
@@ -98,6 +98,22 @@
       margin-bottom: 5vh;
       opacity: 100%;
       align-self: flex-end;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .cover {
+    .heroImageTablet {
+      display: block;
+      position: relative;
+      margin-bottom: 3vh;
+      opacity: 100%;
+      align-self: flex-end;
+      margin-left: 5vw;
+    }
+    .heroImageDesktop {
+      display: none;
     }
   }
 }

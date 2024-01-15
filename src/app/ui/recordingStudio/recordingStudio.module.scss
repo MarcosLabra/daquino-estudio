@@ -103,9 +103,21 @@
       }
       iframe {
         margin-top: 0;
-        margin-right: 50px;
+        margin-right: 10vw;
         width: 500px;
         height: 550px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .musicProd {
+    article {
+      p {
+        font-size: 16px;
+        width: 450px;
+        margin-bottom: 48px;
       }
     }
   }

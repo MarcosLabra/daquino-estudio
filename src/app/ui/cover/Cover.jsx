@@ -34,7 +34,6 @@ export default function Cover() {
         width={590}
         height={518}
       />
-   
     </section>
   )
 }

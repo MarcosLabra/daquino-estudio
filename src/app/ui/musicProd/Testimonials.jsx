@@ -28,6 +28,26 @@ const team = [
     testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
     artist: "Artista 4",
   },
+  {
+    photo: "/testimonialCards/artist-1.png",
+    testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
+    artist: "Artista 5",
+  },
+  {
+    photo: "/testimonialCards/artist-1.png",
+    testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
+    artist: "Artista 6",
+  },
+  {
+    photo: "/testimonialCards/artist-1.png",
+    testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
+    artist: "Artista 7",
+  },
+  {
+    photo: "/testimonialCards/artist-1.png",
+    testimonial: "Lorem ipsum dolor sit amet consectetur. Massa tristique quam felis sit. Turpis venenatis velit massa lectus donec et diam eu. ",
+    artist: "Artista 8",
+  },
 
 ]
 
@@ -41,11 +61,12 @@ export default function Testimonials() {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    centerMode: true,
   };
 
   const updateSettings = () => {
-    if (window.innerWidth >= 1200) {
+    if (window.innerWidth >= 1600) {
+      setSlidesToShow(4);
+    }else if (window.innerWidth >= 1200) {
       setSlidesToShow(3);
     } else if (window.innerWidth >= 768) {
       setSlidesToShow(2);
@@ -61,7 +82,7 @@ export default function Testimonials() {
     return () => {
       window.removeEventListener("resize", updateSettings);
     };
-  }, []); // Empty dependency array ensures useEffect runs only on mount, i.e., on the client side
+  }, []);
 
   return (
     <section className={style.testimonials}>
