@@ -54,6 +54,7 @@ const team = [
 
 export default function Testimonials() {
   const [slidesToShow, setSlidesToShow] = useState(1);
+  const [centerMode, setCenterMode] = useState(true);
 
   const settings = {
     dots: true,
@@ -61,13 +62,18 @@ export default function Testimonials() {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
+    arrows: true,
+    centerMode: centerMode,
   };
 
   const updateSettings = () => {
+
     if (window.innerWidth >= 1600) {
       setSlidesToShow(4);
-    }else if (window.innerWidth >= 1200) {
+      setCenterMode(false);
+    } else if (window.innerWidth >= 1200) {
       setSlidesToShow(3);
+      setCenterMode(false);
     } else if (window.innerWidth >= 768) {
       setSlidesToShow(2);
     } else {
