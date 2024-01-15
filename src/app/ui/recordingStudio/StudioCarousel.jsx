@@ -16,22 +16,34 @@ export default function StudioCarousel() {
   return (
     <Slider {...settings}>
       <Image
-        src="/studio-mockup.png"
+        src="/estudio-mobile/estudio-5.jpg"
         alt="foto estudio"
         width={360}
-        height={320}
+        height={270}
       />
       <Image
-        src="/studio-mockup.png"
+        src="/estudio-mobile/estudio-1.jpg"
         alt="foto estudio"
         width={360}
-        height={320}
+        height={270}
       />
       <Image
-        src="/studio-mockup.png"
+        src="/estudio-mobile/estudio-3.jpg"
         alt="foto estudio"
         width={360}
-        height={320}
+        height={270}
+      />
+      <Image
+        src="/estudio-mobile/estudio-4.jpg"
+        alt="foto estudio"
+        width={360}
+        height={270}
+      />
+      <Image
+        src="/estudio-mobile/estudio-2.jpg"
+        alt="foto estudio"
+        width={360}
+        height={270}
       />
     </Slider>
   )
