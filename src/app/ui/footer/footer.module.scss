@@ -1,16 +1,22 @@
-.footer{
-    background-color: #1E1E1E;
+.footer {
+  background-color: #1e1e1e;
 }
 
 @media screen and (min-width: 1200px) {
-    .footer{
-        .container{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
-            padding: 60px 240px;
-        }
+  .footer {
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 240px;
     }
-    
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer {
+    .container {
+      padding: 60px 480px;
+    }
+  }
 }

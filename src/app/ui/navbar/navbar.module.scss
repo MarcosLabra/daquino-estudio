@@ -37,6 +37,7 @@
       list-style: none;
       border-bottom: 1px solid $ambar;
       cursor: pointer;
+      transition: all 100ms ease-in-out;
       &:hover {
         background-color: $ambar;
         color: $oak;
@@ -54,6 +55,7 @@
       background-color: $oak;
       .rrssIcon {
         color: $ambar;
+        transition: all 150ms ease-in-out;
         &:hover {
           color: $white;
         }
@@ -86,6 +88,7 @@
             font-weight: 700;
             color: $oak;
             a {
+              transition: all 300ms ease-in-out;
               &:hover {
                 color: $teal;
               }
@@ -103,6 +106,7 @@
               height: 32px;
               width: 120px;
               border-radius: 25px;
+              transition: all 300ms ease-in-out;
               .waIcon {
                 width: 16px;
                 margin-right: 12px;

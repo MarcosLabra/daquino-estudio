@@ -6,6 +6,7 @@ import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import Hamburger from 'hamburger-react'
 
 export default function Navbar() {
 
@@ -51,7 +52,7 @@ export default function Navbar() {
           />
         </Link>
         <div>
-          <BsList onClick={toggleMenu} className={styles.fsBar} />
+        <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} color="#551414"  />
           <nav className={styles.navDesktop}>
             <ul>
               <li><Link href="#musicProd">Producción musical</Link></li>
@@ -60,7 +61,7 @@ export default function Navbar() {
               <li>
                 <Link href="#contact">
                   <button>
-                    <FaWhatsapp className={styles.waIcon}/>
+                    <FaWhatsapp className={styles.waIcon} />
                     Contacto
                   </button>
                 </Link>
