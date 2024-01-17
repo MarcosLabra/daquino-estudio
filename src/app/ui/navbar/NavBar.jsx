@@ -45,10 +45,10 @@ export default function Navbar() {
       <div>
         <Link href="#cover">
           <Image
-            src="/images/daquino-logo-desktop.png"
+            src="/images/daquino-logo-desktop.svg"
             alt="Logo del estudio"
             width={103}
-            height={40}
+            height={36}
           />
         </Link>
         <div>
