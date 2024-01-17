@@ -1,9 +1,34 @@
-import style from "./video.module.scss"
+"use client"
+
+import { useState, useEffect } from "react";
+import style from "./video.module.scss";
 
 export default function Video() {
-    return (
-        <div className={style.video}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QrR_gm6RqCo?si=4UYfakdftaHIwpPO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </div>
-    )
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <div className={style.video}>
+      {windowWidth > 854 ? (
+        <video controls>
+          <source src={"/videos/video1080lite.mp4"} type="video/mp4" />
+          Tu navegador no soporta el tag de video.
+        </video>
+      ) : (
+        <video controls>
+          <source src={"/videos/video480lite.mp4"} type="video/mp4" />
+          Tu navegador no soporta el tag de video.
+        </video>
+      )}
+    </div>
+  );
 }
