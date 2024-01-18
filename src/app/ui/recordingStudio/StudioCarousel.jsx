@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import style from "./StudioCarousel.module.scss"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,40 +9,37 @@ export default function StudioCarousel() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
     slidesToScroll: 1
   };
+
+  // Verificar el ancho de la pantalla y ajustar slidesToShow en consecuencia
+  if (window.innerWidth > 1200) {
+    settings.slidesToShow = 2;
+  } else {
+    settings.slidesToShow = 1;
+  }
+
   return (
-    <Slider {...settings}>
-      <Image
-        src="/estudio-mobile/estudio-5.jpg"
+    <Slider {...settings} className={style.carouselContainer}>
+      <img
+        src="/estudio-desktop/estudio-5.jpg"
         alt="foto estudio"
-        width={360}
-        height={270}
       />
-      <Image
-        src="/estudio-mobile/estudio-1.jpg"
+      <img
+        src="/estudio-desktop/estudio-1.jpg"
         alt="foto estudio"
-        width={360}
-        height={270}
       />
-      <Image
-        src="/estudio-mobile/estudio-3.jpg"
+      <img
+        src="/estudio-desktop/estudio-3.jpg"
         alt="foto estudio"
-        width={360}
-        height={270}
       />
-      <Image
-        src="/estudio-mobile/estudio-4.jpg"
+      <img
+        src="/estudio-desktop/estudio-4.jpg"
         alt="foto estudio"
-        width={360}
-        height={270}
       />
-      <Image
-        src="/estudio-mobile/estudio-2.jpg"
+      <img
+        src="/estudio-desktop/estudio-2.jpg"
         alt="foto estudio"
-        width={360}
-        height={270}
       />
     </Slider>
   )
