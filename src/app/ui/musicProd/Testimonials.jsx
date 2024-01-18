@@ -4,7 +4,7 @@ import style from "./testimonials.module.scss"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import TestimonialCard from "../cards/TestimoanialCard";
+import TestimonialCard from "../cards/TestimonialCard";
 import { useEffect, useState } from "react";
 
 const team = [
