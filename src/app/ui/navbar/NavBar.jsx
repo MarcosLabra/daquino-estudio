@@ -51,7 +51,9 @@ export default function Navbar() {
           />
         </Link>
         <div>
-        <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} color="#551414" className={styles.hamburger} />
+          <div className={styles.hamburger}>
+            <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} color="#551414" />
+          </div>
           <nav className={styles.navDesktop}>
             <ul>
               <li><Link href="#musicProd">Producción musical</Link></li>
