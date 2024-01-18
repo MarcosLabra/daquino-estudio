@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { BsList } from "react-icons/bs";
 import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
@@ -85,6 +84,9 @@ export default function Navbar() {
           </Link>
           <Link href="https://www.youtube.com/@daquinoestudio4227" rel="noopener noreferrer" target="_blank">
             <FaYoutube className={styles.rrssIcon} />
+          </Link>
+          <Link href="https://walink.co/ae5d62" rel="noopener noreferrer" target="_blank">
+            <FaWhatsapp className={styles.rrssIcon} />
           </Link>
         </div>
       </nav>
