@@ -5,14 +5,13 @@
   z-index: 5;
   width: 100vw;
   position: relative;
+  padding: 0 16px;
+  background-color: $ambar;
   div {
-    background-color: $ambar;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 16px;
-
     .navDesktop {
       display: none;
     }

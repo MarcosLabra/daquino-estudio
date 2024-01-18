@@ -47,12 +47,12 @@ export default function Navbar() {
           <Image
             src="/images/daquino-logo-desktop.svg"
             alt="Logo del estudio"
-            width={103}
-            height={36}
+            width={123}
+            height={43}
           />
         </Link>
         <div>
-        <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} color="#551414"  />
+        <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} color="#551414" className={styles.hamburger} />
           <nav className={styles.navDesktop}>
             <ul>
               <li><Link href="#musicProd">Producción musical</Link></li>
