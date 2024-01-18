@@ -1,23 +1,36 @@
-.video {
+@import "../../variables.module.scss";
+
+.videoContainer {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  .videoMobile {
-    width: 100vw;
+  .videoOverlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      filter: drop-shadow(2px 2px 8px #111111);
+    }
+    .playIcon {
+      position: absolute;
+      fill: $white;
+      font-size: 32px;
+      cursor: pointer;
+    }
   }
-  .videoDesktop {
-    display: none;
+
+  .video {
+    width: 100vw;
   }
 }
 
 @media screen and (min-width: 854px) {
-  .video {
-    .videoMobile {
-      display: none;
-    }
-    .videoDesktop {
-      width: 100vw;
-      display: block;
+  .videoContainer {
+    .videoOverlay {
+      .playIcon {
+        font-size: 60px;
+      }
     }
   }
 }

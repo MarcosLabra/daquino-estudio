@@ -1,22 +1,72 @@
 "use client"
 
+import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { IoMdPlay } from 'react-icons/io';
 import style from "./video.module.scss";
 
-export default function Video() {
+const Video = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+  const [showVideo, setShowVideo] = useState(false);
+
+  const getVideoSource = () => {
+    return isMobile ? '/videos/video480lite.mp4' : '/videos/video1080lite.mp4';
+  };
+
+  const getImageSource = () => {
+    return isMobile ? '/images/480thumb.png' : '/images/1080thumb.png';
+  };
+
+  const handleClick = () => {
+    setShowVideo(true);
+  };
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (showVideo) {
+        const videoElement = document.querySelector(`.${style.video}`);
+        const videoPosition = videoElement.getBoundingClientRect().top;
+
+        if (videoPosition >= 0 && videoPosition <= window.innerHeight) {
+          if (videoElement.paused) {
+            videoElement.play();
+          }
+        } else {
+          videoElement.pause();
+          setShowVideo(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [showVideo]);
 
   return (
-    <div className={style.video}>
+    <div className={style.videoContainer}>
+      {!showVideo && (
+        <div className={style.videoOverlay} >
+          <img
+            src={getImageSource()}
+            alt="video de sesion musical"
+            className={style.video}
+          />
+          <IoMdPlay className={style.playIcon} onClick={handleClick} />
+        </div>
+      )}
 
-      <video controls className={style.videoMobile}>
-        <source src={"/videos/video480lite.mp4"} type="video/mp4" />
-        Tu navegador no soporta el tag de video.
-      </video>
-
-      <video className={style.videoDesktop} controls>
-        <source src={"/videos/video1080lite.mp4"} type="video/mp4" />
-        Tu navegador no soporta el tag de video.
-      </video>
-
+      {showVideo && (
+        <video autoPlay controls className={style.video}>
+          <source src={getVideoSource()} type="video/mp4" />
+          Tu navegador no soporta el tag de video.
+        </video>
+      )}
     </div>
   );
-}
+};
+
+export default Video;
