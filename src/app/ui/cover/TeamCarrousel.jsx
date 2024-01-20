@@ -26,6 +26,12 @@ const team = [
     teamColor: "#F6343C",
   },
   {
+    teamPhoto: "/teamCards/valen.png",
+    teamMember: "Valentina Casero",
+    teamRole: "Vocalista de sesion",
+    teamColor: "#E60283",
+  },
+  {
     teamPhoto: "/teamCards/claudio.png",
     teamMember: "Claudio Martinez",
     teamRole: "Guitarrista de sesión",
