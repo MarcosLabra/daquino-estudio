@@ -57,6 +57,7 @@ export default function TeamCarrousel() {
     slidesToScroll: 1,
     arrows: true,
     centerMode: centerMode,
+    autoplay: true,
   };
 
   const updateSettings = () => {

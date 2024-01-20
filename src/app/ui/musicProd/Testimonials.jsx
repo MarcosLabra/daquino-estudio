@@ -64,6 +64,7 @@ export default function Testimonials() {
     slidesToScroll: 1,
     arrows: true,
     centerMode: centerMode,
+    autoplay: true,
   };
 
   const updateSettings = () => {

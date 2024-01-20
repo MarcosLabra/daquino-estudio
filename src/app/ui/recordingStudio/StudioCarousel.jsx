@@ -14,7 +14,8 @@ export default function StudioCarousel() {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: slidesToShow
+    slidesToShow: slidesToShow,
+    autoplay: true,
   };
 
   const updateSettings = () => {
