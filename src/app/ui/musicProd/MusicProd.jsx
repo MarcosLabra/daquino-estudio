@@ -45,8 +45,7 @@ export default function MusicProd() {
             />
           </div>
         </div>
-        <iframe src="https://open.spotify.com/embed/album/4rB6AFiDR9fLs3kokOzv8q?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+        <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1760763954&color=%23048e91&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" loading="lazy"></iframe>
       </article>
     </section>
   )

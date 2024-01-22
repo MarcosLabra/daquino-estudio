@@ -4,6 +4,10 @@
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  background-color: $ambar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .videoOverlay {
     position: relative;
     display: flex;
@@ -27,10 +31,36 @@
 
 @media screen and (min-width: 854px) {
   .videoContainer {
+    padding: 0;
+    height:85vh;
     .videoOverlay {
+      height: 75vh;
+      img {
+        height: 75vh;
+        width: auto;
+      }
       .playIcon {
         font-size: 60px;
       }
+    }
+    .video {
+      width: 85vw;
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .videoContainer {
+    padding: 0;
+    height:80vh;
+    .videoOverlay {
+      height: 60vh;
+      img {
+        height: 75vh;
+        width: auto;
+      }
+    }
+    .video {
+      width: 65vw;
     }
   }
 }
