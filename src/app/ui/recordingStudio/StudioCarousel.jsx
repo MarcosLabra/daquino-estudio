@@ -39,10 +39,6 @@ export default function StudioCarousel() {
   return (
     <Slider {...settings} className={style.carouselContainer}>
       <img
-        src="/estudio/estudio-5.jpg"
-        alt="foto del estudio"
-      />
-      <img
         src="/estudio/estudio-1.jpg"
         alt="foto del estudio"
       />
@@ -55,7 +51,19 @@ export default function StudioCarousel() {
         alt="foto del estudio"
       />
       <img
-        src="/estudio/estudio-2.jpg"
+        src="/estudio/estudio-5.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-6.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-7.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-8.jpg"
         alt="foto del estudio"
       />
     </Slider>
