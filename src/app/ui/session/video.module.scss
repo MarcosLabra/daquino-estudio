@@ -5,9 +5,7 @@
   padding-bottom: 56.25%;
   height: 0;
   background-color: $ambar;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   .videoOverlay {
     position: relative;
     display: flex;
@@ -31,8 +29,11 @@
 
 @media screen and (min-width: 854px) {
   .videoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
-    height:85vh;
+    height: 85vh;
     .videoOverlay {
       height: 75vh;
       img {
@@ -51,7 +52,7 @@
 @media screen and (min-width: 1600px) {
   .videoContainer {
     padding: 0;
-    height:80vh;
+    height: 80vh;
     .videoOverlay {
       height: 60vh;
       img {

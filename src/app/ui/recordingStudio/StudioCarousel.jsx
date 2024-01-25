@@ -39,68 +39,37 @@ export default function StudioCarousel() {
   }, []);
 
   return (
-    <div className={style.carouselContainer}>
-
-      <Slider {...settings} className={style.sliderMobile} >
-        <img
-          src="/estudio/mobile/estudio-1.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/mobile/estudio-3.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/mobile/estudio-4.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/mobile/estudio-5.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/mobile/estudio-6.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/mobile/estudio-7.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/mobile/estudio-8.jpg"
-          alt="foto del estudio"
-        />
-      </Slider>
-      <Slider {...settings} className={style.sliderDesktop} >
-        <img
-          src="/estudio/desktop/estudio-1.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/desktop/estudio-3.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/desktop/estudio-4.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/desktop/estudio-5.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/desktop/estudio-6.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/desktop/estudio-7.jpg"
-          alt="foto del estudio"
-        />
-        <img
-          src="/estudio/desktop/estudio-8.jpg"
-          alt="foto del estudio"
-        />
-      </Slider>
-    </div>
+   
+    <Slider {...settings} className={style.carouselContainer} >
+      <img
+        src="/estudio/estudio-1.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-3.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-4.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-5.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-6.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-7.jpg"
+        alt="foto del estudio"
+      />
+      <img
+        src="/estudio/estudio-8.jpg"
+        alt="foto del estudio"
+      />
+    </Slider>
+    
   )
 }
