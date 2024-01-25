@@ -2,8 +2,13 @@
 
 .teamCarrousel {
   width: 100vw;
-  background-image: url("/bg-images/bg-image-team.png");
+  background-image: url("/bg-images/bg-image-team.jpg");
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (min-width: 420px) {
+  .teamCarrousel {
+    background-image: url("/bg-images/bg-image-team-mobile.jpg");
+  }
+}

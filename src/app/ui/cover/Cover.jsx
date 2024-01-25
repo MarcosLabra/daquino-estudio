@@ -15,21 +15,21 @@ export default function Cover() {
       </div>
       <Image
         className={style.heroImageMobile}
-        src="/images/hero-image-desktop.svg"
+        src="/images/hero-image-mobile.png"
         alt="ilustracion de un microfono, una consola y dos parlantes"
         width={328}
         height={288}
       />
       <Image
         className={style.heroImageTablet}
-        src="/images/hero-image-desktop.svg"
+        src="/images/hero-image.png"
         alt="ilustracion de un microfono, una consola y dos parlantes"
         width={656}
         height={576}
       />
       <Image
         className={style.heroImageDesktop}
-        src="/images/hero-image-desktop.svg"
+        src="/images/hero-image.png"
         alt="ilustracion de un microfono, una consola y dos parlantes"
         width={590}
         height={518}

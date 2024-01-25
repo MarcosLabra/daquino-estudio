@@ -20,7 +20,9 @@ export default function StudioCarousel() {
 
   const updateSettings = () => {
 
-    if (window.innerWidth >= 854) {
+    if (window.innerWidth >= 1600) {
+      setSlidesToShow(3);
+    } else if (window.innerWidth >= 420) {
       setSlidesToShow(2);
     } else {
       setSlidesToShow(1);
@@ -37,35 +39,68 @@ export default function StudioCarousel() {
   }, []);
 
   return (
-    <Slider {...settings} className={style.carouselContainer}>
-      <img
-        src="/estudio/estudio-1.jpg"
-        alt="foto del estudio"
-      />
-      <img
-        src="/estudio/estudio-3.jpg"
-        alt="foto del estudio"
-      />
-      <img
-        src="/estudio/estudio-4.jpg"
-        alt="foto del estudio"
-      />
-      <img
-        src="/estudio/estudio-5.jpg"
-        alt="foto del estudio"
-      />
-      <img
-        src="/estudio/estudio-6.jpg"
-        alt="foto del estudio"
-      />
-      <img
-        src="/estudio/estudio-7.jpg"
-        alt="foto del estudio"
-      />
-      <img
-        src="/estudio/estudio-8.jpg"
-        alt="foto del estudio"
-      />
-    </Slider>
+    <div className={style.carouselContainer}>
+
+      <Slider {...settings} className={style.sliderMobile} >
+        <img
+          src="/estudio/mobile/estudio-1.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/mobile/estudio-3.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/mobile/estudio-4.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/mobile/estudio-5.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/mobile/estudio-6.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/mobile/estudio-7.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/mobile/estudio-8.jpg"
+          alt="foto del estudio"
+        />
+      </Slider>
+      <Slider {...settings} className={style.sliderDesktop} >
+        <img
+          src="/estudio/desktop/estudio-1.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/desktop/estudio-3.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/desktop/estudio-4.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/desktop/estudio-5.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/desktop/estudio-6.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/desktop/estudio-7.jpg"
+          alt="foto del estudio"
+        />
+        <img
+          src="/estudio/desktop/estudio-8.jpg"
+          alt="foto del estudio"
+        />
+      </Slider>
+    </div>
   )
 }

@@ -14,7 +14,7 @@ const Video = () => {
   };
 
   const getImageSource = () => {
-    return isMobile ? '/images/480thumb.png' : '/images/1080thumb.png';
+    return isMobile ? '/images/videoImgMobile.jpg' : '/images/videoImgDesktop.jpg';
   };
 
   const handleClick = () => {

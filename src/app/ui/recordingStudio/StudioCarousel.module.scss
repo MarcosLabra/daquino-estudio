@@ -1,16 +1,16 @@
-// .carouselContainer {
-//   width: 100vw;
-//   // img {
-//   //   width: 100%;
-//   // }
-// }
+.carouselContainer {
+  .sliderDesktop {
+    display: none;
+  }
+}
 
-// @media screen and (min-width: 834px) {
-//   .carouselContainer {
-//     height: 80vh;
-//     img {
-//       height: 80vh;  
-//       width: 50vw; 
-//     }
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .carouselContainer {
+    .sliderMobile {
+      display: none;
+    }
+    .sliderDesktop {
+      display: block;
+    }
+  }
+}
