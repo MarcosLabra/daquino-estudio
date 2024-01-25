@@ -1,26 +1,42 @@
 "use client"
-
 import { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { IoMdPlay } from 'react-icons/io';
 import style from "./video.module.scss";
 
 const Video = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+  const [screenWidth, setScreenWidth] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setScreenWidth(window.innerWidth);
+
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  const isMobile = screenWidth <= 767;
 
   const getVideoSource = () => {
     return isMobile ? '/videos/video480lite.mp4' : '/videos/video1080lite.mp4';
   };
 
   const getImageSource = () => {
-    return isMobile ? '/images/videoImgMobile.jpg' : '/images/videoImgDesktop.jpg';
+    const source = isMobile ? '/images/videoImgMobile.jpg' : '/images/videoImgDesktop.jpg';
+    return source;
   };
 
   const handleClick = () => {
     setShowVideo(true);
   };
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,17 +55,19 @@ const Video = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, [showVideo]);
 
   return (
     <div className={style.videoContainer}>
       {!showVideo && (
-        <div className={style.videoOverlay} >
+        <div className={style.videoOverlay}>
           <img
             src={getImageSource()}
             alt="video de sesion musical"
