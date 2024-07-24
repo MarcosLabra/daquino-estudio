@@ -3,39 +3,14 @@
 .copyright {
   background-color: $black;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
   color: white;
   font-size: 12px;
-  text-align: center;
+display: flex;
+justify-content: center;
 
   a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     margin-bottom: 20px;
-    
-
-    div {
-      display: flex;
-      align-items: center;
-      transition: all 300ms ease-in-out;
-      .dev {
-        font-size: 10px;
-        color: #635959;
-      }
-
-      .name {
-        margin-left: 10px;
-
-      }
-      &:hover {
-        color: #00bb2d;
-      }
-    }
 
     .copy {
       width: 260px;
@@ -45,25 +20,13 @@
 
 @media screen and (min-width: 1200px) {
   .copyright {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 20px 60px;
     color: white;
     font-size: 14px;
     text-align: left;
-
-    a {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 0px;
-
-      div {
-        display: flex;
-        align-items: center;
-      }
-    }
   }
 }
+
 @media screen and (min-width: 1600px) {
   .copyright {
     padding: 20px 120px;
