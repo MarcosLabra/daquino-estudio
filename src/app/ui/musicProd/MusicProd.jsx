@@ -45,7 +45,13 @@ export default function MusicProd() {
             />
           </div>
         </div>
-        <iframe width="100%" height="350" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1760763954&color=%23048e91&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" loading="lazy"></iframe>
+        <Image
+              className={style.quotesUpMobile}
+              src="/images/instruments.svg"
+              alt="comillas hacia arriba"
+              width={400}
+              height={400}
+            />
       </article>
     </section>
   )

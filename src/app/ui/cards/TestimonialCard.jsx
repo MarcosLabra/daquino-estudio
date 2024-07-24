@@ -1,7 +1,7 @@
 import Image from "next/image"
 import style from "./testimonialCard.module.scss"
 
-export default function TestimonialCard({ photo, artist, testimonial }) {
+export default function TestimonialCard({ artist, testimonial }) {
 
   return (
     <div className={style.testimonialCard}>
@@ -18,7 +18,7 @@ export default function TestimonialCard({ photo, artist, testimonial }) {
         width={50} height={34}
       />
       <p>{testimonial}</p>
-      <Image
+      {/* <Image
         className={style.mobilePic}
         src={photo}
         alt={"foto de perfil"}
@@ -29,7 +29,7 @@ export default function TestimonialCard({ photo, artist, testimonial }) {
         src={photo}
         alt={"foto de perfil"}
         width={70} height={70}
-      />
+      /> */}
       <h3>{artist}</h3>
     </div>
   )
