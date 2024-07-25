@@ -13,40 +13,6 @@ export default function Session() {
           <p>Nos sumergimos en el proceso creativo contigo, abrazando cada etapa para lograr un desarrollo auténtico y una conexión profunda con tu obra. Valoramos la travesía creativa, fomentando la experimentación y autenticidad en cada sesión, superando expectativas y haciendo del proceso musical una experiencia rica y satisfactoria en sí misma. Confía en nosotros para llevar tu música al siguiente nivel desde nuestro estudio, transformando tu proyecto en una obra única y memorable. </p>
         </div>
 
-        {/* <div className={style.phrase}>
-          <Image
-            className={style.quotesUpMobile}
-            src="/images/quotes-up.svg"
-            alt="comillas hacia arriba"
-            width={25}
-            height={18}
-          />
-          <Image
-            className={style.quotesUpDesktop}
-            src="/images/quotes-up.svg"
-            alt="comillas hacia arriba"
-            width={50}
-            height={35}
-          />
-          <h4>
-            Encontrá tu <span>IDENTIDAD</span>
-          </h4>
-          <Image
-            className={style.quotesDownMobile}
-            src="/images/quotes-down.svg"
-            alt="comillas hacia abajo"
-            width={25}
-            height={18}
-          />
-          <Image
-            className={style.quotesDownDesktop}
-            src="/images/quotes-down.svg"
-            alt="comillas hacia abajo"
-            width={50}
-            height={35}
-          />
-        </div> */}
-
       </article>
     </section>
   )
