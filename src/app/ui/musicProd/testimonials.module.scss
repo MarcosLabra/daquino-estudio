@@ -2,13 +2,7 @@
 
 .testimonials {
   width: 100vw;
-  background-image: url("/bg-images/bg-testimonials-mobile.jpg");
+  background-image: url("/bg-images/bg-testimonials.jpg");
   background-size: cover;
   background-position: right;
-}
-
-@media screen and (min-width: 420px) {
-  .testimonials {
-    background-image: url("/bg-images/bg-testimonials.jpg");
-  }
 }
