@@ -1,7 +1,7 @@
 @import "../../variables.module.scss";
 
 .testimonialCard {
-  width: 213px;
+  width: 270px;
   height: 320px;
   display: flex;
   flex-direction: column;
@@ -26,10 +26,10 @@
     border-radius: 50%;
   }
   p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    height: 130px;
-    width: 175px;
+    height: 140px;
+    width: 220px;
     margin: 10px 0;
   }
   h3 {

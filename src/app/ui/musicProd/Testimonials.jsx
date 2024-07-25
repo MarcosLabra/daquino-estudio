@@ -10,12 +10,12 @@ import { useEffect, useState } from "react";
 const team = [
   {
     photo: "/testimonialCards/julio.jpg",
-    testimonial: "La mejor experiencia grabando en un lugar donde me senti muy comodo y pude explayar todas mis ideas interpretadas por Marcos en la técnica. El buen gusto de un productor es esencial para llevar a cabo un trabajo tan personal como nuestra música",
+    testimonial: "La mejor experiencia grabando en un lugar donde me senti muy comodo. El buen gusto de un productor como Marcos es esencial para llevar a cabo un trabajo tan personal como nuestra música",
     artist: "Julio César Lucero",
   },
   {
     photo: "/testimonialCards/artist-1.png",
-    testimonial: 'quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción. Muchas gracias Marcos Daquino',
+    testimonial: 'quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción.',
     artist: "Walter Gigena",
   },
   {

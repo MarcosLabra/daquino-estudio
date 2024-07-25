@@ -9,7 +9,7 @@ export default function TestimonialCard({photo, artist, testimonial }) {
         className={style.mobilePic}
         src="/images/quotes-testimonials.svg"
         alt="comillas"
-        width={20} height={14}
+        width={25} height={18}
       />
       <Image
         className={style.desktopPic}
@@ -22,7 +22,7 @@ export default function TestimonialCard({photo, artist, testimonial }) {
         className={style.mobileProfilePic}
         src={photo}
         alt={"foto de perfil"}
-        width={47} height={47}
+        width={55} height={55}
       />
       <Image
         className={style.desktopProfilePic}
