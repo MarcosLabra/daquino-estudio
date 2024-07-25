@@ -9,17 +9,17 @@ import { useEffect, useState } from "react";
 
 const team = [
   {
-    photo: "/testimonialCards/artist-1.png",
+    photo: "/testimonialCards/julio.jpg",
     testimonial: "La mejor experiencia grabando en un lugar donde me senti muy comodo y pude explayar todas mis ideas interpretadas por Marcos en la técnica. El buen gusto de un productor es esencial para llevar a cabo un trabajo tan personal como nuestra música",
-    artist: "Julio César Lucero / Cisne Elocuente",
+    artist: "Julio César Lucero",
   },
   {
     photo: "/testimonialCards/artist-1.png",
-    testimonial: 'quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción...muchas gracias Marcos Daquino... ',
-    artist: "Walter Gigena / Te Llevo Flores",
+    testimonial: 'quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción. Muchas gracias Marcos Daquino',
+    artist: "Walter Gigena",
   },
   {
-    photo: "/testimonialCards/artist-1.png",
+    photo: "/testimonialCards/nelson.jpg",
     testimonial: "Muy contento del trabajo realizado, muy profesional, buen criterio para resolver y un feedback excelente para lograr el resultado esperado. Recomiendo y vuelvo a elegir seguir trabajando así. ",
     artist: "Nelson cinalto",
   },
@@ -82,7 +82,7 @@ export default function Testimonials() {
         {team.map((member, index) => (
           <TestimonialCard
             key={index}
-            // photo={member.photo}
+            photo={member.photo}
             artist={member.artist}
             testimonial={member.testimonial}
           />

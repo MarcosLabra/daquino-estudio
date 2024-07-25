@@ -2,7 +2,7 @@
 
 .testimonialCard {
   width: 213px;
-  height: 280px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -18,12 +18,19 @@
   .desktopPic {
     display: none;
   }
+  .desktopProfilePic {
+    display: none;
+    border-radius: 50%;
+  }
+  .mobileProfilePic{
+    border-radius: 50%;
+  }
   p {
     font-size: 12px;
     font-weight: 500;
-    height: 90px;
+    height: 130px;
     width: 175px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   h3 {
     margin: 10px 0;
@@ -41,6 +48,9 @@
     margin: 120px 0;
     padding-top: 40px;
     .mobilePic {
+      display: none;
+    }
+    .mobileProfilePic {
       display: none;
     }
     .desktopPic {

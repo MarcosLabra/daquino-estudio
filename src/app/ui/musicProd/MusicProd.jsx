@@ -45,13 +45,7 @@ export default function MusicProd() {
             />
           </div>
         </div>
-        <Image
-              className={style.quotesUpMobile}
-              src="/images/instruments.svg"
-              alt="comillas hacia arriba"
-              width={400}
-              height={400}
-            />
+        <img src="/images/instruments.svg" alt="comillas hacia arriba" className={style.illustration} />
       </article>
     </section>
   )
