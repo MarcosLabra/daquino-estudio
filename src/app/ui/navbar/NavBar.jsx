@@ -59,8 +59,9 @@ export default function Navbar() {
               <li><Link href="#musicProd">Producción musical</Link></li>
               <li><Link href="#session">Músicos de sesión</Link></li>
               <li><Link href="#recordingStudio">Estudio de grabación</Link></li>
+              <li><Link href="#mastering">Mastering Analogico</Link></li>
               <li>
-                <Link href="#contact">
+                <Link  href="https://walink.co/ae5d62" rel="noopener noreferrer" target="_blank">
                   <button>
                     <FaWhatsapp className={styles.waIcon} />
                     Contacto
@@ -77,6 +78,7 @@ export default function Navbar() {
           <li><Link href="#musicProd" onClick={toggleMenu}>Producción musical</Link></li>
           <li><Link href="#session" onClick={toggleMenu}>Músicos de sesión</Link></li>
           <li><Link href="#recordingStudio" onClick={toggleMenu}>Estudio de grabación</Link></li>
+          <li><Link href="#mastering">Mastering Analogico</Link></li>
           <li><Link href="#contact" onClick={toggleMenu}>Contacto</Link></li>
         </ul>
 

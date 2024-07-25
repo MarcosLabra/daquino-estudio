@@ -4,6 +4,7 @@ import TeamCarrousel from "./ui/cover/TeamCarrousel";
 import Footer from "./ui/footer/footer";
 import MusicProd from "./ui/musicProd/MusicProd";
 import Testimonials from "./ui/musicProd/Testimonials";
+import Mastering from "./ui/recordingStudio/Mastering";
 import RecordingStudio from "./ui/recordingStudio/RecordingStudio";
 import StudioCarousel from "./ui/recordingStudio/StudioCarousel";
 import Session from "./ui/session/Session";
@@ -19,6 +20,7 @@ export default function Home() {
       <Session />
       <Video />
       <RecordingStudio />
+      <Mastering />
       <StudioCarousel />
       <Footer />
       <WaIcon />
