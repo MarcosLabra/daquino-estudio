@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import styles from "./navbar.module.scss";
-import Image from "next/image";
+;
 import Link from "next/link";
 import Hamburger from 'hamburger-react'
 
@@ -43,7 +43,7 @@ export default function Navbar() {
     <header className={styles.navbarContainer}>
       <div>
         <Link href="#cover">
-          <Image
+          <img
             src="/images/daquino-logo-desktop.svg"
             alt="Logo del estudio"
             width={123}

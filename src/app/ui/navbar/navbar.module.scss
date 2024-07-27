@@ -7,15 +7,18 @@
   position: relative;
   padding: 0 16px;
   background-color: $ambar;
+
   div {
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .navDesktop {
       display: none;
     }
   }
+
   .navbarMobile {
     transition: all 0.3s ease;
     position: absolute;
@@ -33,34 +36,41 @@
       border-bottom: 1px solid $ambar;
       cursor: pointer;
       transition: all 100ms ease-in-out;
+
       &:hover {
         background-color: $ambar;
         color: $oak;
       }
+
       a {
         display: block;
         width: 100%;
       }
     }
+
     .rrss {
       display: flex;
       padding-top: 45vh;
       justify-content: space-evenly;
       bottom: 10vh;
       background-color: $oak;
+
       .rrssIcon {
         color: $ambar;
         transition: all 150ms ease-in-out;
         font-size: 32px;
+
         &:hover {
           color: $white;
         }
       }
     }
   }
+
   .closedMenu {
     right: -200px;
   }
+
   .openMenu {
     right: 0px;
   }
@@ -72,26 +82,33 @@
       .hamburger {
         display: none;
       }
+
       .navDesktop {
         display: block;
+        text-align: center;
+
         ul {
           display: flex;
           align-items: center;
           font-size: 14px;
+
           li {
             list-style: none;
             margin-left: 20px;
             font-weight: 700;
             color: $oak;
+
             a {
               transition: all 300ms ease-in-out;
               &:hover {
                 color: $teal;
               }
+
               &:active {
                 color: $teal-highlight;
               }
             }
+
             button {
               display: flex;
               align-items: center;
@@ -103,16 +120,19 @@
               width: 120px;
               border-radius: 25px;
               transition: all 300ms ease-in-out;
+
               .waIcon {
                 font-size: 20px;
                 margin-right: 12px;
                 color: $white;
               }
+
               &:hover {
                 background-color: $teal-highlight;
                 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
                   0px 4px 8px 3px rgba(0, 0, 0, 0.15);
               }
+
               &:active {
                 background-color: $teal;
               }
@@ -121,6 +141,7 @@
         }
       }
     }
+
     .navbarMobile {
       display: none;
     }
@@ -131,12 +152,14 @@
   .navbarContainer {
     padding: 0 60px;
     background-color: $ambar;
+
     div {
       .navDesktop {
         ul {
           display: flex;
           align-items: center;
           font-size: 16px;
+
           li {
             margin-left: 40px;
 

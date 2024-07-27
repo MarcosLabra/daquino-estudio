@@ -1,4 +1,4 @@
-import Image from "next/image";
+;
 import style from "./cover.module.scss"
 
 export default function Cover() {
@@ -13,26 +13,16 @@ export default function Cover() {
           Aquí estamos... para que juntos demos la nota.<span className={style.red}> Entre el silencio y el sonido algo diferente ocurrirá</span>.
         </p>
       </div>
-      <Image
-        className={style.heroImageMobile}
+      <img className={style.heroImageMobile}
         src="/images/hero-image-mobile.png"
-        alt="ilustracion de un microfono, una consola y dos parlantes"
-        width={328}
-        height={288}
-      />
-      <Image
-        className={style.heroImageTablet}
+        alt="ilustracion de un microfono, una consola y dos parlantes" />
+      <img className={style.heroImageTablet}
         src="/images/hero-image.png"
         alt="ilustracion de un microfono, una consola y dos parlantes"
-        width={656}
-        height={576}
       />
-      <Image
-        className={style.heroImageDesktop}
+      <img className={style.heroImageDesktop}
         src="/images/hero-image.png"
         alt="ilustracion de un microfono, una consola y dos parlantes"
-        width={590}
-        height={518}
       />
     </section>
   )

@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import { MdPhone, MdLocationOn, MdMap } from "react-icons/md";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import style from "./info.module.scss"
@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Info() {
   return (
     <div className={style.infoContainer}>
-      <Image
+      <img
         src="/images/info-logo.svg"
         alt="Logo del estudio"
         width={145} height={26}

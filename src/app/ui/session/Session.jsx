@@ -1,4 +1,4 @@
-import Image from "next/image";
+;
 import style from "./session.module.scss"
 import SectionTitle from "../SectionTitle";
 

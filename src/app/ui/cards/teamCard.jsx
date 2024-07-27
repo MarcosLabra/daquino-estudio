@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import style from "./teamCard.module.scss"
 
 export default function TeamCard({ teamPhoto, teamMember, teamRole, teamColor }) {
@@ -8,13 +8,13 @@ export default function TeamCard({ teamPhoto, teamMember, teamRole, teamColor })
 
   return (
     <div className={style.teamCard} style={cardStyle}>
-      <Image
+      <img
         className={style.mobilePic}
         src={teamPhoto}
         alt={"foto de perfil"}
         width={120} height={120}
       />
-      <Image
+      <img
         className={style.desktopPic}
         src={teamPhoto}
         alt={"foto de perfil"}

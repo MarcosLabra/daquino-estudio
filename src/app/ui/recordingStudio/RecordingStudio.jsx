@@ -1,4 +1,4 @@
-import Image from "next/image";
+;
 import style from "./recordingStudio.module.scss"
 import SectionTitle from "../SectionTitle";
 
@@ -14,14 +14,14 @@ export default function RecordingStudio() {
             <p>Con equipos de última generación y un equipo apasionado, nos comprometemos a elevar la calidad de tu grabación, valorando cada fase del proceso creativo. Descubre cómo nuestro estudio no solo captura el sonido, sino que también potencia la expresión artística, convirtiendo cada proyecto en una experiencia musical enriquecedora y memorable. Confía en nosotros para llevar tu música al siguiente nivel, donde la excelencia y la creatividad se fusionan.</p>
           </div>
           <div className={style.phrase}>
-            <Image
+            <img
               className={style.quotesUpMobile}
               src="/images/quotes-up.svg"
               alt="comillas hacia arriba"
               width={25}
               height={18}
             />
-            <Image
+            <img
               className={style.quotesUpDesktop}
               src="/images/quotes-up.svg"
               alt="comillas hacia arriba"
@@ -31,14 +31,14 @@ export default function RecordingStudio() {
             <h4>
               Encontrá tu <span>Sonido</span>
             </h4>
-            <Image
+            <img
               className={style.quotesDownMobile}
               src="/images/quotes-down.svg"
               alt="comillas hacia abajo"
               width={25}
               height={18}
             />
-            <Image
+            <img
               className={style.quotesDownDesktop}
               src="/images/quotes-down.svg"
               alt="comillas hacia abajo"
