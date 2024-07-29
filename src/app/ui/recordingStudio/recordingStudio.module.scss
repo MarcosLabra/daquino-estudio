@@ -63,8 +63,8 @@
 @media screen and (min-width: 1200px) {
   .recordingStudio {
     article {
-      height: calc(90vh - 60px);
-      padding: 0;
+      height: fit-content;
+      padding: 60px 120px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -110,6 +110,8 @@
     }
   }
 }
+
+
 
 @media screen and (min-width: 1600px) {
   .musicProd {
