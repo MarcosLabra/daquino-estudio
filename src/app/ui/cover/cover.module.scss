@@ -6,7 +6,7 @@
   align-items: center;
   padding-top: 20px;
   background-color: $ambar;
-  height: 92vh;
+  height: 90vh;
 
   div {
     display: flex;
@@ -78,21 +78,20 @@
 
 @media screen and (min-width: 1200px) {
   .cover {
-    height: fit-content;
+    height: 91vh;
     padding: 60px 120px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: $ambar;
 
     div {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      align-self: flex-start;
 
       h2 {
-        font-size: 60px;
+        font-size: 50px;
         width: 500px;
         height: 138px;
         font-family: "Sora", sans-serif;
@@ -113,11 +112,9 @@
     .heroImageDesktop {
       display: block;
       position: relative;
-      margin-bottom: 5vh;
       opacity: 100%;
-      align-self: flex-end;
-      width: 442px;
-      height: 388px;
+      width: 462px;
+      height: 408px;
     }
   }
 }
@@ -125,6 +122,16 @@
 @media screen and (min-width: 1600px) {
   .cover {
     height: 90.5vh;
+    justify-content: center;
+
+    div {
+      align-self: flex-start;
+
+      h2 {
+        font-size: 60px;
+      }
+    }
+
     .heroImageTablet {
       display: block;
       position: relative;

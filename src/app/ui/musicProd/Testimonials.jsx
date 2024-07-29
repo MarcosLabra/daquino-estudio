@@ -14,7 +14,7 @@ const team = [
     artist: "Julio César Lucero",
   },
   {
-    photo: "/testimonialCards/artist-1.png",
+    photo: "/testimonialCards/walter.jpg",
     testimonial: 'quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción.',
     artist: "Walter Gigena",
   },
@@ -24,12 +24,12 @@ const team = [
     artist: "Nelson cinalto",
   },
   {
-    photo: "/testimonialCards/artist-1.png",
+    photo: "/testimonialCards/marcelo.jpg",
     testimonial: "Grabar con Marcos es un lujo. No solo tiene un equipamiento de primera sino también un trato impecable, siempre con la mejor onda para involucrarse de lleno en el proyecto",
     artist: "Marcelo Santini",
   },
   {
-    photo: "/testimonialCards/artist-1.png",
+    photo: "/testimonialCards/leo.jpg",
     testimonial: "Como banda encontramos una producción con compromiso y calidad que superó nuestras expectativas, no solo en lo artístico sino en lo humano. ",
     artist: "Leonel rojas",
   },
