@@ -28,6 +28,9 @@
       font-weight: 700;
       color: $teal ;
     }
+    .illustration {
+      display: none;
+    }
   }
 }
 
@@ -60,6 +63,7 @@
 
       .illustration {
         width: 30vw;
+        display: block;
       }
     }
   }
