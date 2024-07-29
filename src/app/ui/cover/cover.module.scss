@@ -23,7 +23,6 @@
 
     p {
       text-align: center;
-      border-top: 1px solid $oak;
       padding-top: 22px;
       width: 230px;
       font-size: 18px;
@@ -125,6 +124,7 @@
 
 @media screen and (min-width: 1600px) {
   .cover {
+    height: 90.5vh;
     .heroImageTablet {
       display: block;
       position: relative;

@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 
 export const metadata = {
-  title: 'Daquino Estudio',
+  title: 'Daquino Estudio - Estudio de Grabación y Producción Musical en Mar del Plata',
   description: 'Descubri todo tu potencial en nuestro estudio, en donde el proceso creativo es tan importante como el producto final',
 }
 
