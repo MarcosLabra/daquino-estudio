@@ -15,7 +15,7 @@ const team = [
   },
   {
     photo: "/testimonialCards/walter.jpg",
-    testimonial: 'quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción.',
+    testimonial: 'Quedamos super conformes de lo que fue nuestro primer disco llamado "Semilla" grabado en Estudio Daquino un laburo impecable todo lo que fue la producción.',
     artist: "Walter Gigena",
   },
   {
