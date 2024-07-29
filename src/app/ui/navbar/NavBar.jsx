@@ -61,7 +61,7 @@ export default function Navbar() {
               <li><Link href="#recordingStudio">Estudio de grabación</Link></li>
               <li><Link href="#mastering">Mastering Analogico</Link></li>
               <li>
-                <Link  href="https://walink.co/ae5d62" rel="noopener noreferrer" target="_blank">
+                <Link  href="https://wa.link/avhjog" rel="noopener noreferrer" target="_blank">
                   <button>
                     <FaWhatsapp className={styles.waIcon} />
                     Contacto
@@ -89,7 +89,7 @@ export default function Navbar() {
           <Link href="https://www.youtube.com/@daquinoestudio4227" rel="noopener noreferrer" target="_blank">
             <FaYoutube className={styles.rrssIcon} />
           </Link>
-          <Link href="https://walink.co/ae5d62" rel="noopener noreferrer" target="_blank">
+          <Link href="https://wa.link/avhjog" rel="noopener noreferrer" target="_blank">
             <FaWhatsapp className={styles.rrssIcon} />
           </Link>
         </div>
