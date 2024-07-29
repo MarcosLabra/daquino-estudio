@@ -21,7 +21,7 @@ const team = [
   {
     photo: "/testimonialCards/nelson.jpg",
     testimonial: "Muy contento del trabajo realizado, muy profesional, buen criterio para resolver y un feedback excelente para lograr el resultado esperado. Recomiendo y vuelvo a elegir seguir trabajando así. ",
-    artist: "Nelson cinalto",
+    artist: "Nelson Cinalto",
   },
   {
     photo: "/testimonialCards/marcelo.jpg",
@@ -31,7 +31,7 @@ const team = [
   {
     photo: "/testimonialCards/leo.jpg",
     testimonial: "Como banda encontramos una producción con compromiso y calidad que superó nuestras expectativas, no solo en lo artístico sino en lo humano. ",
-    artist: "Leonel rojas",
+    artist: "Leonel Rojas",
   },
 
 ]
