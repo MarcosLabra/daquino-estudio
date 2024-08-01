@@ -9,7 +9,7 @@ export default function Cover() {
           <span className={style.white}>DESCUBRÍ</span> todo tu <span className={style.red}>POTENCIAL</span>
         </h2>
         <p>
-          Hay un camino recorrido que avala algo mas que equipamentos y modernismos. La creatividad no sabe de tiempos ni de espacios, <span className={style.white}> crear expectativas para que algo sea distinto</span> es nuestro lema. Estar al lado de tus sueños aportando ideas para ampliar lo que un dia fue un diseño.
+          Hay un camino recorrido que avala algo mas que equipamientos y modernismos. La creatividad no sabe de tiempos ni de espacios, <span className={style.white}> crear expectativas para que algo sea distinto</span> es nuestro lema. Estar al lado de tus sueños aportando ideas para ampliar lo que un dia fue un diseño.
           Aquí estamos... para que juntos demos la nota.<span className={style.red}> Entre el silencio y el sonido algo diferente ocurrirá</span>.
         </p>
       </div>
